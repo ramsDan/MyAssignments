@@ -16,6 +16,7 @@ function LunchCheckController($scope){
 
     if($scope.userTxt.length==0){
       $scope.message="Please enter data first";
+      $scope.countMsg="";
     }
     else{
     for(var i=0;i<$scope.userTxt.length;i++){
@@ -31,10 +32,11 @@ function LunchCheckController($scope){
   console.log($scope.userTxt);
     if($scope.userTxt.length<=3 && $scope.userTxt.length!=0){
       $scope.message="Enjoy!";
-      
+      $scope.countMsg="";
     }
     if($scope.userTxt.length>3){
       $scope.message="Too much!";
+      $scope.countMsg="";
     }
 
 
